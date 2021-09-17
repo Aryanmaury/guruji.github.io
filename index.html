@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body{
+     margin: 0;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+background-image: url("susil3.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+transition: 3s;
+animation-name:animate;
+animation-duration: alternate-reverse;
+animation-duration: 30s;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+animation-play-state: running;
+animation-timing-function: ease-in-out;
+
+}
+@keyframes animate{
+    0%{
+        background-image: url(susil1.jpg);
+    
+    }
+    20%{
+        background-image: url(susil2.jpg);
+    
+    }
+    40%{
+        background-image: url(susil5.jpg);
+    
+    }
+    60%{
+        background-image: url(susil4.jpg);
+    
+    }
+    80%{
+        background-image: url(shiv6.jpg);
+    
+    }
+    100%{
+        background-image: url(shiv7.jpg);
+    
+    }
+    120%{
+        background-image: url(susil3.jpg);
+    }
+   
+}
+#aryan{
+    color: rgba(8, 1, 2, 0.333);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+   position: fixed;
+   top: 50%;
+   right: 10%;
+    text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1 id="aryan">I Still miss your long but interesting lecture.I hope you are doing fine in life sir.</h1>
+    </div>
+    
+</body>
+<script>
+     var audio=document.createElement('audio');
+audio.setAttribute('src','DBS.mp3');
+audio.loop=true;
+audio.play();
+</script>
+</html>
